@@ -1,0 +1,15 @@
+{
+  "name": "sepolia-dapp-contracts",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "dotenv": "^16.0.0"
+  }
+}
