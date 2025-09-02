@@ -1,0 +1,4 @@
+- cd frontend
+- npm install
+- edit src/config.js with deployed addresses (JK, INR, WETH, AMM)
+- npm run dev
