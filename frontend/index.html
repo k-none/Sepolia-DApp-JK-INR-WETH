@@ -1,12 +1,62 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sepolia DApp — ETH ⇄ JK/INR via WETH</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sepolia DApp — Swap ETH ⇄ JK/INR (via WETH)</title>
+
+    <!-- Basic SEO -->
+    <meta
+      name="description"
+      content="A decentralized exchange DApp on Sepolia testnet where you can wrap ETH to WETH and swap between ETH, JK, and INR tokens."
+    />
+    <meta name="author" content="YourName" />
+
+    <!-- Social preview -->
+    <meta property="og:title" content="Sepolia DApp — ETH ⇄ JK/INR" />
+    <meta
+      property="og:description"
+      content="Swap Sepolia ETH with JK and INR tokens using WETH liquidity pools."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Theming -->
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Minimal reset -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif;
+        background: #f9fafb;
+        color: #111827;
+        line-height: 1.5;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #loading {
+        font-size: 1.2rem;
+        color: #555;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="loading">Loading DApp…</div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
