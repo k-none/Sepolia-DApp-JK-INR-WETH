@@ -28,30 +28,51 @@
     <link rel="icon" href="/favicon.ico" />
 
     
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Helvetica, Arial, sans-serif;
-        background: #f9fafb;
-        color: #111827;
-        line-height: 1.5;
-      }
-      #root {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      #loading {
-        font-size: 1.2rem;
-        color: #555;
-      }
-    </style>
+<style>
+  /* Reset & box model */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Body styling */
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+    color: #111827;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Root container */
+  #root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  /* Loading text */
+  #loading {
+    font-size: 1.25rem;
+    color: #4b5563;
+    font-weight: 500;
+    animation: pulse 1.5s infinite;
+  }
+
+  /* Simple pulse animation */
+  @keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+  }
+</style>
+
   </head>
   <body>
     <div id="root">
